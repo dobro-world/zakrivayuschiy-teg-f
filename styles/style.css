@@ -56,16 +56,19 @@
   border: 2px solid var(--accent-color, #000);
   background-color: var(--bg-color, #fff);
   font-size: var(--main-font-size);
+  margin-block-end: 50px;
 }
 
 .card-title {
   padding: 4px 10px;
   font-size: var(--main-font-size);
   font-variation-settings: var(--accent-font-weight, 715);
+  border-block-end: 2px solid #000;
 }
 
 .card-image-container {
   position: relative;
+  border-block-end: 2px solid #000;
 }
 
 .image-decor-text {
@@ -74,18 +77,22 @@
   font-family: var(--accent-font), fantasy;
   font-variation-settings: var(--main-font-weight, 400);
   font-size: 14px;
-  text-shadow: -2px #fff;
-  paint-order: stroke fill;
+  text-shadow:
+  -1px 0 #fff, 
+  0 1px #fff, 
+  1px 0 #fff, 
+  0 -1px #fff;
   opacity: 50%;
   right: 25px;
   top: 25px;
   mix-blend-mode: hard-light;
+  z-index: 1;
 }
 
 @supports ((text-stroke: 2px var(--stroke-color)) or (-webkit-text-stroke: 2px var(--stroke-color))) {
   .image-decor-text {
-    -webkit-text-stroke: 2px var(--stroke-color);
-    text-stroke: 2px var(--stroke-color);
+    -webkit-text-stroke: 1px var(--stroke-color);
+    text-stroke: 1px var(--stroke-color);
     text-shadow: none;
   }
 }
@@ -129,4 +136,7 @@
   height: 38px;
 }
 
+.footer {
+  
+}
 
