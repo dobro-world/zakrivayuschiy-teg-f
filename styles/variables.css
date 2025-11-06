@@ -30,4 +30,5 @@
 	--bg-color: #fff;
 	--inline-size: clamp(375px, 100%, 700px);
 	--stroke-color: #fff;
+	--footer-font-size: 14px;
 }

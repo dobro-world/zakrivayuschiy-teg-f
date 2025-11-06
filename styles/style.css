@@ -136,5 +136,64 @@
   height: 38px;
 }
 
+.footer {
+  margin-block-end: 100px;
+  justify-self: center;
+  background-color: #fff;
+  border: 2px solid var(--accent-color);
+}
+
+.footer-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  gap: 8px;
+  padding: 17px 20px;
+  cursor: pointer;
+}
+
+.icon {
+  inline-size: 28px;
+}
+
+.icon-memory {
+  inline-size: 39px;
+}
+
+.footer-dialog {
+  inline-size: 341px;
+  block-size: 191px;
+  padding: 0;
+}
+
+.dialog-wrapper {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 20px;
+  padding: 30px 40px;
+  align-items: center;
+}
+
+.button-dialog-save {
+  display: grid;
+  background-color: transparent;
+  border: 2px solid var(--accent-color);
+  padding: 12px 116px;
+  margin-block-end: 30px;
+  justify-self: center;
+}
+
+.dialog-text {
+  text-transform: uppercase;
+  line-height: 150%;
+}
+
+.footer-button-text {
+  font-family: 'PressStart2P', fantasy;
+  font-size: var(--footer-font-size);
+}
+
 
 
