@@ -24,7 +24,7 @@
         <div class="card-image-container">
           <span class="image-decor-text">ЗА РАБОТУ</span>
           <img 
-          class="image-content"
+          class="image-content filter-blur"
           src="./images/little-frog.gif">
         </div>
         <div class="card-description">
@@ -68,7 +68,7 @@
         <div class="card-image-container">
           <span class="image-decor-text">ОГО</span>
           <img 
-          class="image-content"
+          class="image-content filter-contrast"
           src="./images/kitty-wow.gif">
         </div>
         <div class="card-description">
@@ -112,7 +112,7 @@
         <div class="card-image-container">
           <span class="image-decor-text">ОБЕССИЛЕН</span>
           <img 
-          class="image-content"
+          class="image-content filter-grayscale "
           src="./images/crying-guy.gif">
         </div>
         <div class="card-description">
@@ -156,7 +156,7 @@
         <div class="card-image-container">
           <span class="image-decor-text">НА ПОЗИТИВЕ</span>
           <img 
-          class="image-content"
+          class="image-content filter-hue-rotate"
           src="./images/happy-minions.gif">
         </div>
         <div class="card-description">
@@ -200,7 +200,7 @@
         <div class="card-image-container">
           <span class="image-decor-text">ЗАРЯД МОТИВАЦИИ</span>
           <img 
-          class="image-content"
+          class="image-content filter-invert"
           src="./images/smart-man.gif">
         </div>
         <div class="card-description">
@@ -244,7 +244,7 @@
         <div class="card-image-container">
           <span class="image-decor-text">УСТАЛОСТЬ</span>
           <img 
-          class="image-content"
+          class="image-content filter-saturate"
           src="./images/the-difficulty.gif">
         </div>
         <div class="card-description">
@@ -288,7 +288,7 @@
         <div class="card-image-container">
           <span class="image-decor-text">ОТДЫХ</span>
           <img 
-          class="image-content"
+          class="image-content filter-sepia"
           src="./images/the-difficulty-2.gif">
         </div>
         <div class="card-description">
@@ -332,7 +332,7 @@
         <div class="card-image-container">
           <span class="image-decor-text">ПРАЗДНОВАНИЕ</span>
           <img 
-          class="image-content"
+          class="image-content "
           src="./images/celebrate.gif">
         </div>
         <div class="card-description">
@@ -373,14 +373,14 @@
       </article>
     </main>
     <footer class="footer">
-      <button class="footer-button" type="button" onclick="window['dialog-save-memory'].show();">
+      <button class="footer-button" type="button" onclick="window['dialog-save-memory'].showModal();">
         <svg 
           class="icon"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 39 39">
           <use href="./images/floppy-disk.svg#save-icon"></use>
         </svg>
-        <span class="footer-button-text">Сохранить на память</span>
+        <span class="button__text">Сохранить на память</span>
       </button>
       <dialog id="dialog-save-memory" class="footer-dialog">
         <div class="dialog-wrapper">
@@ -390,9 +390,9 @@
           viewBox="0 0 39 39">
           <use href="./images/floppy-disk.svg#save-icon"></use>
         </svg>
-        <span class="footer-button-text dialog-text">Вставьте дискету, чтобы продолжить</span>
+        <span class="button__text dialog-text">Вставьте дискету, чтобы продолжить</span>
         </div>
-        <button class="button-dialog-save"><span class="footer-button-text dialog-text">ок</span></button>
+        <button type="button" class="footer-button button-dialog-save button__text footer-button-text-save" onclick="window['dialog-save-memory'].close();">ок</button>
       </dialog>
     </footer>
     <script src="./scripts/like.js"></script>
