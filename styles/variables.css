@@ -32,4 +32,7 @@
 	--inline-size: clamp(375px, 100%, 700px);
 	--stroke-color: #fff;
 	--footer-font-size: 14px;
+	--contour-color: #000;
+	--animation-fill-color: #ff0000;
+	--sparkles-color: #ff0000;
 }
