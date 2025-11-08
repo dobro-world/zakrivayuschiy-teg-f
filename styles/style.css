@@ -95,8 +95,9 @@
   filter: saturate(390%);
 }
 
-.filter-sepia {
+.filters-sepia-grayscale {
   filter: sepia(0.9);
+  filter: grayscale(50%);
 }
 
 .like-icon.is-liked .heart {
