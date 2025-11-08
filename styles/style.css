@@ -96,8 +96,7 @@
 }
 
 .filters-sepia-grayscale {
-  filter: sepia(0.9);
-  filter: grayscale(50%);
+  filter: sepia(0.9) grayscale(50%);
 }
 
 .like-icon.is-liked .heart {
@@ -337,6 +336,7 @@
   z-index: 1;
   font-family: 'PressStart2P', fantasy;
   font-size: var(--footer-font-size);
+  font-variation-settings: var(--main-font-weight, 400);
   line-height: 150%;
   color: #fff;
   mix-blend-mode: difference;
