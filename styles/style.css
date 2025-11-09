@@ -226,21 +226,25 @@
 }
 
 .card__like-button {
-  border: 2px solid var(--accent-color);
-  background-color: var(--bg-color, #fff);
   width: 130px;
   height: 38px;
-  transition: box-shadow 0.3s ease;
-  cursor: pointer;
-  position: relative;
   overflow: hidden;
 }
 
-.card__like-button:focus {
+.button {
+  position: relative;
+  background-color: var(--bg-color);
+  border: 2px solid var(--accent-color);
+  font-family: 'PressStart2P', fantasy;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.button:focus {
   outline: none;
 }
 
-.card__like-button:focus-visible {
+.button:focus-visible {
   box-shadow: 2px 2px 0 var(--accent-color);
 }
 
@@ -263,22 +267,9 @@
   display: flex;
   align-items: center;
   justify-self: center;
-  background-color: var(--bg-color);
-  border: 2px solid var(--accent-color);
-  transition: box-shadow 0.3s ease;
   padding: 15px 20px;
   gap: 8px;
-  cursor: pointer;
-  position: relative;
   margin-block-end: 100px;
-}
-
-.footer-button:focus {
-  outline: none;
-}
-
-.footer-button:focus-visible {
-  box-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .icon {
@@ -313,9 +304,7 @@
 .button-dialog-save {
   display: grid;
   padding: 6px 114px;
-  background-color: var(--bg-color, #fff);
   margin-block-end: 30px;
-  font-family: 'PressStart2P', fantasy;
   outline: none;
 }
 
